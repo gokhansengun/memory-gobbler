@@ -17,11 +17,11 @@ Third parameter is the sleep of milliseconds between each iteration default is 1
 1. Allocate a total of 10 MBs memory in 10 iterations waiting 1 sec between
 
     ```bash
-    docker run --rm gsengun/memory-gobbler:0.1
+    docker run --rm -t gsengun/memory-gobbler:0.1
     ```
 
 1. Allocate a total of 1000 MBs memory in 50 iterations (with 20 MBs each) waiting 200 ms between
 
     ```bash
-    docker run --rm gsengun/memory-gobbler:0.1 1000 20 200
+    docker run --rm -t gsengun/memory-gobbler:0.1 1000 20 200
     ```
